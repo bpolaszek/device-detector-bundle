@@ -1,0 +1,18 @@
+services:
+
+    BenTools\DeviceDetectorBundle\:
+        resource: '../../*'
+        # you can exclude directories or files
+        # but if a service is unused, it's removed anyway
+        exclude: '../../{Entity,Repository,Tests}'
+        autoconfigure: true
+        autowire: true
+
+    DeviceDetector\Parser\Device\Mobile:
+        class: DeviceDetector\Parser\Device\Mobile
+
+    DeviceDetector\Parser\OperatingSystem:
+        class: DeviceDetector\Parser\OperatingSystem
+
+    DeviceDetector\Parser\Client\Browser:
+        class: DeviceDetector\Parser\Client\Browser

@@ -1,0 +1,20 @@
+{
+  "name": "bentools/device-detector-bundle",
+  "require": {
+    "piwik/device-detector": "~3.11",
+    "bentools/violin": "~1.0@dev",
+    "symfony/yaml": "~4",
+    "bentools/doctrine-ulid": "~1.0"
+  },
+  "require-dev": {
+    "doctrine/orm": "~2.6",
+    "symfony/http-kernel": "~4",
+    "symfony/dependency-injection": "~4",
+    "symfony/config": "~4"
+  },
+  "autoload": {
+    "psr-4": {
+      "BenTools\\DeviceDetectorBundle\\": "src"
+    }
+  }
+}
